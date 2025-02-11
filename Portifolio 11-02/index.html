@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="inserirData(new Date())">
+    <header>
+        <h1>Hora do Dia</h1>
+        <p>O tema do site muda de acordo com a hora do dia! Quer testar? Insira um horário ficticio abaixo:</p>
+        <p>
+            <input type="time" name="horarioInput" id="horarioInput">
+            <input type="button" value="Inserir" onclick="inserirData()">
+        </p>
+    </header>
+    <section>
+        <div id="msg">
+            Aqui vai aparecer a mensagem
+        </div>
+        <div id="img">
+            <img id="imagem" src="fotomanha.png" alt="Foto do Dia">
+        </div>
+    </section>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p><input type="button" value="Verificar" onclick="verificar()"></p>
+        </div>
+        <div id="res">
+           Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <footer>
+        <p>
+        <a href="https://github.com/DouglasSRM" target="_blank">&copy; DouglasSeramim</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
