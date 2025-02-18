@@ -9,7 +9,9 @@ function App() {
       <p>React com Vite</p>
       <P/>
 
-      <Card/>
+      <Card>Ablablabla</Card>
+      <Card>adwawdi</Card>
+      <Card>eueueueu</Card>
     </>
   )
 }
