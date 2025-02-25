@@ -1,0 +1,14 @@
+.main-cover {
+    
+    left: 0;
+    right: 0;
+    display: flex; /* Torna o container flexível */
+    justify-content: flex-start; /* Centraliza horizontalmente */
+    align-items: top; /* Centraliza verticalmente (se necessário) */
+    height: 80px; /* Defina uma altura fixa para o cabeçalho */
+    background-color: #fff; /* Cor de fundo */
+    width: 100%;
+    padding: 10px 0; /* Ajuste o padding conforme necessário */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+  }
