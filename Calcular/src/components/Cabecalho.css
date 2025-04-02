@@ -1,0 +1,35 @@
+.cabecalho {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding: 20px 20px;
+  background-color: #ffffff;
+  font-family: 'Nunito Sans', sans-serif;
+  border-radius: 10px;
+  justify-content: center;
+  border: 1px solid lightgray;
+}
+
+.cabecalho p {
+  font-size: 17px;
+  margin: 20px;
+  text-align: left;
+  color: black;
+  display: flex;
+  align-items: left;
+  font-family: 'Nunito Sans', sans-serif; 
+}
+
+.cabecalho p::after {
+  content: "07/06/2022";
+  margin-left: 255px;
+  font-family: 'Nunito Sans', sans-serif; /* Altera a fonte para Nunito Sans */
+}
+
+.cabecalho img.logo {
+  height: 70px;
+  width: auto;
+  margin-right: 10px;
+  position: absolute;
+  left: 50px;
+}

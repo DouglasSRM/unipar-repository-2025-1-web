@@ -1,0 +1,25 @@
+.texto-informativo {
+  font-family: 'Nunito Sans', sans-serif;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  max-width: 1000px; /* Define a largura máxima do texto */
+  padding-left: 20px;
+}
+
+.texto-informativo p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: normal;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.texto-informativo p.titulo {
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.texto-informativo p.autor-data {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}

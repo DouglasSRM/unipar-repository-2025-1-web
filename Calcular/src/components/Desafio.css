@@ -1,0 +1,95 @@
+.desafio {
+  background-color: #6a0dad;
+  padding: 100px;
+  color: white;
+  width: 15%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.desafio h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.desafio button:first-of-type {
+  background-color: rgb(65, 38, 201);
+  padding: 15px 60px;
+  width: auto;
+  min-width: 120px;
+  text-align: center;
+}
+
+.desafio button {
+  width: 300px; 
+  padding: 12px 0; 
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 15px;
+  border: none;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: rgb(44, 198, 44);
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.desafio button:last-of-type {
+  background-color: rgb(230, 34, 80);
+}
+
+.desafio div {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.desafio input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  border-radius: 15px;
+  border: none;
+  width: 40px;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.desafio p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.desafio span {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(150, 109, 109, 0.2);
+  margin: 0 5px;
+}
+
+.desafio label { 
+  font-size: 18px;
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding-left: 20px; 
+}

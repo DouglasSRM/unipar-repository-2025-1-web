@@ -1,0 +1,11 @@
+.pontuacao {
+  background-color: white; /* Ajuste a cor de fundo conforme o protótipo */
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.pontuacao h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
