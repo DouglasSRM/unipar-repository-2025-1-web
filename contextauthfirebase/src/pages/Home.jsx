@@ -3,11 +3,20 @@ import { useAuth } from "../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+
+    const { user } = useAuth()
+    const navigate = useNavigate()
+
+    const handleLogout = () => {
+        auth.signOut()
+        navigate("/")
+    }
+
     return (
         <div style={styles.container}>
             <div style={styles.card}>
                 <h1 style={styles.title}>Olá, {user?.email} 👋</h1>
-                <p>Você está logado!</p>
+                <p style={styles.text}>Você está logado!</p>
                 <button onClick={handleLogout} style={styles.button}>Sair</button>
             </div>
         </div>
@@ -16,6 +25,7 @@ export default function Home() {
 const styles = {
     container: {
         height: "100vh",
+        width: "100vw",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -31,6 +41,9 @@ const styles = {
     title: {
         marginBottom: "20px",
         color: "#333",
+    },
+    text: {
+        color: "#222", 
     },
     button: {
         marginTop: "20px",

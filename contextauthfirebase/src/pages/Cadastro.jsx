@@ -4,6 +4,28 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 export default function Cadastro() {
+
+    const navigate = useNavigate()
+
+    const [email, setEmail] = useState("")
+    const [senha, setSenha] = useState("")
+
+    const handleCadastro = async (e) => {
+        e.preventDefault()
+
+        try {
+            await createUserWithEmailAndPassword(auth, email, senha)
+            alert("Usuário cadastrado!")
+            navigate("/")
+        } catch(error) {
+            alert("Problema ao cadastrar: " + error.message)
+        }
+    }   
+
+    const goToLogin = () => {
+        navigate("/")
+    }
+
     return (
         <div style={styles.container}>
             <form style={styles.form} onSubmit={handleCadastro}>
@@ -29,7 +51,7 @@ export default function Cadastro() {
                 {/* Link para login */}
                 <p style={styles.linkText}>
                     Já tem conta?{" "}
-                    <span style={styles.link} onClick={() => navigate("/")}>
+                    <span style={styles.link} onClick={goToLogin}>
                         Faça login
                     </span>
                 </p>
@@ -41,6 +63,7 @@ export default function Cadastro() {
 const styles = {
     container: {
         height: "100vh",
+        width: "100vw",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

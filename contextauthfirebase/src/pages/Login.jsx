@@ -1,9 +1,27 @@
-import { useState } from "react";
+import { createContext, useState } from "react";
 import { auth } from "../services/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+    const [email, setEmail] = useState("")
+    const [senha, setSenha] = useState("")
+
+    const navigate = useNavigate()
+
+    const handleLogin = async (e) => {
+        e.preventDefault()
+        try{
+            await signInWithEmailAndPassword(auth, email, senha)
+            navigate("/home")
+        } catch(error) {
+            alert("Problema no login: " + error.message )
+        }
+    }
+
+    const handleCadastro = () => {
+        navigate("/cadastro")
+    }
 
     return (
         <div style={styles.container}>
@@ -50,6 +68,7 @@ export default function Login() {
 const styles = {
     container: {
         height: "100vh",
+        width: "100vw",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
